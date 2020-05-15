@@ -7,6 +7,12 @@ font-family: 'Saira Condensed', sans-serif; */
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 header {
     position: relative;
     background-color: #29a6dc;
@@ -97,6 +103,7 @@ header button {
         margin-top: 40px;
     }
 }
+
 @media (orientation: portrait) and (min-width: 768px) {
     header p {
         font-size: 68px;
@@ -171,6 +178,7 @@ header button {
         right: 0;
     }
 }
+
 @media (orientation: landscape) and (min-width: 1280px) {
     header div.welcome {
         text-align: left;
@@ -189,10 +197,11 @@ header button {
         font-size: 24px;
     }
     header img {
-        height: 120%;  
-        bottom: -10%;     
+        height: 120%;
+        bottom: -10%;
     }
 }
+
 @media (orientation: landscape) and (min-width: 1600px) {
     header p {
         font-size: 108px;
@@ -207,8 +216,8 @@ header button {
         line-height: 80px;
         font-size: 28px;
     }
-    
 }
+
 @media (min-width: 1024px) {
     header button {
         cursor: pointer;
@@ -219,6 +228,94 @@ header button {
         color: #111;
     }
 }
+
 section {
-    min-height: 100vh;
+    min-height: 30vh;
+}
+
+/* Sekcja 1 */
+
+.features {
+    margin: 50px auto 0;
+    padding: 5%;
+    text-align: center;
+    max-width: 1600px;
+}
+
+.features h2 {
+    font-family: 'Saira', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.features h3 {
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.features p {
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.features img {
+    width: 100%;
+    margin: 5px 0;
+    max-width: 375px;
+}
+
+@media (min-width: 360px) {
+    .features h2 {
+        font-size: 28px;
+    }
+    .features h3 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .features h2 {
+        font-size: 36px;
+    }
+    .features h3 {
+        font-size: 24px;
+    }
+    .features p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features {
+        margin-top: 50px;
+        padding: 5% 2%;
+    }
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+    .features p {
+        line-height: 120%;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .feature {
+        padding: 20px 40px;
+    }
+    .features h2 {
+        font-size: 60px;
+    }
+    .features h3 {
+        font-size: 32px;
+    }
+    .features p {
+        font-size: 21px;
+    }
 }
