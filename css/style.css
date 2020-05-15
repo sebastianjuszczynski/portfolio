@@ -1,0 +1,176 @@
+/* font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background-color: #29a6dc;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header>* {
+    position: absolute;
+}
+
+header img {
+    height: 60%;
+    bottom: 0;
+    right: 0;
+}
+
+header div.welcome {
+    z-index: 1;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header button {
+    font-family: 'Saira', sans-serif;
+    line-height: 32px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    font-size: 12px;
+    border: 2px solid white;
+    font-weight: 300;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header img {
+        height: 55%;
+        bottom: 0;
+        right: 0;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    header h2 {
+        font-size: 28px;
+    }
+    header button {
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header img {
+        height: 55%;
+        bottom: 0;
+        right: 0;
+    }
+    header h1 {
+        font-size: 32px;
+    }
+    header h2 {
+        font-size: 32px;
+    }
+    header button {
+        line-height: 50px;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: landscape) {
+    header img {
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+    header div.welcome {
+        top: 15%;
+        left: 5%;
+        right: 50%;
+    }
+    header button {
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header h2 {
+        font-size: 24px;
+    }
+    header button {
+        line-height: 40px;
+        font-size: 14px;
+    }
+    header img {
+        height: 110%;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header p {
+        font-size: 72px;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    header h2 {
+        font-size: 40px;
+    }
+    header button {
+        line-height: 70px;
+        font-size: 24px;
+    }
+    header img {
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+}
+@media (orientation: landscape) and (min-width: 1280px) {
+    header p {
+        font-size: 72px;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    header h2 {
+        font-size: 40px;
+    }
+    header button {
+        line-height: 70px;
+        font-size: 24px;
+    }
+    header img {
+        height: 120%;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+section {
+    min-height: 100vh;
+}
