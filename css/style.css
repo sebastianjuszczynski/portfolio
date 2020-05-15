@@ -12,6 +12,8 @@ header {
     background-color: #29a6dc;
     height: 100vh;
     overflow: hidden;
+    margin: 0 auto;
+    max-width: 1920px;
 }
 
 header>* {
@@ -20,7 +22,7 @@ header>* {
 
 header img {
     height: 60%;
-    bottom: 0;
+    bottom: -10%;
     right: 0;
 }
 
@@ -62,7 +64,7 @@ header button {
 @media (orientation: portrait) and (min-width: 360px) {
     header img {
         height: 55%;
-        bottom: 0;
+        bottom: -10%;
         right: 0;
     }
     header h1 {
@@ -80,7 +82,7 @@ header button {
 @media (orientation: portrait) and (min-width: 410px) {
     header img {
         height: 55%;
-        bottom: 0;
+        bottom: -10%;
         right: 0;
     }
     header h1 {
@@ -95,11 +97,30 @@ header button {
         margin-top: 40px;
     }
 }
+@media (orientation: portrait) and (min-width: 768px) {
+    header p {
+        font-size: 68px;
+    }
+    header img {
+        height: 65%;
+        bottom: -10%;
+    }
+    header h1 {
+        font-size: 46px;
+    }
+    header h2 {
+        font-size: 46px;
+    }
+    header button {
+        line-height: 70px;
+        font-size: 26px;
+    }
+}
 
 @media (orientation: landscape) {
     header img {
         height: 90%;
-        bottom: 0;
+        bottom: -10%;
         right: 0;
     }
     header div.welcome {
@@ -125,7 +146,7 @@ header button {
     }
     header img {
         height: 110%;
-        bottom: 0;
+        bottom: -10%;
         right: 0;
     }
 }
@@ -146,11 +167,14 @@ header button {
     }
     header img {
         height: 90%;
-        bottom: 0;
+        bottom: -10%;
         right: 0;
     }
 }
 @media (orientation: landscape) and (min-width: 1280px) {
+    header div.welcome {
+        text-align: left;
+    }
     header p {
         font-size: 72px;
     }
@@ -165,12 +189,36 @@ header button {
         font-size: 24px;
     }
     header img {
-        height: 120%;
-        bottom: 0;
-        right: 0;
+        height: 120%;  
+        bottom: -10%;     
     }
 }
-
+@media (orientation: landscape) and (min-width: 1600px) {
+    header p {
+        font-size: 108px;
+    }
+    header h1 {
+        font-size: 70px;
+    }
+    header h2 {
+        font-size: 70px;
+    }
+    header button {
+        line-height: 80px;
+        font-size: 28px;
+    }
+    
+}
+@media (min-width: 1024px) {
+    header button {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    header button:hover {
+        background-color: #fff;
+        color: #111;
+    }
+}
 section {
     min-height: 100vh;
 }
