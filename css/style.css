@@ -436,3 +436,294 @@ section {
         margin-bottom: 40px;
     }
 }
+
+.slogan {
+    text-align: center;
+    background-image: url("../images/motto.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+.slogan h2 {
+    font-family: "Saira Condensed", sans-sarif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.slogan p {
+    font-family: "Saira", sans-serif;
+    font-size: 18px;
+}
+
+.slogan p.author {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.slogan .bg {
+    padding: 30px 10px;
+    background-color: rgba(0, 63, 114, 0.5);
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .slogan .bg {
+        padding: 50px 10px;
+    }
+    .slogan h2 {
+        font-size: 48px;
+        margin-bottom: 35px;
+    }
+    .slogan p {
+        font-size: 26px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slogan .bg {
+        padding: 80px 10px;
+    }
+    .slogan h2 {
+        font-size: 60px;
+        margin-bottom: 55px;
+    }
+    .slogan p {
+        font-size: 40px;
+        width: 50%;
+    }
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 26px;
+    }
+}
+
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobby .item {
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url("../images/hobby1.jpg");
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url("../images/hobby2.jpg");
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url("../images/hobby3.jpg");
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url("../images/hobby4.jpg");
+}
+
+.hobby .item p {
+    font-family: "Saira", sans-serif;
+    color: white;
+    text-align: center;
+    /* line-height: 25vh; */
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.hobby h2 {
+    font-family: "Saira Condensed", sand-serif;
+    padding: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .hobby h2 {
+        font-size: 48px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+    .hobby .item p {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobby .item p {
+        opacity: 0;
+        padding: 0;
+        line-height: 40vh;
+        transition: 1s;
+        cursor: default;
+    }
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hobby h2 {
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 45px;
+    }
+    .hobby .item p {
+        font-size: 40px;
+    }
+}
+
+.contact {
+    background-color: #000;
+    padding: 30px 20px;
+}
+
+.contact h2 {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.wrap {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact input, .contact button, .contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: "Saira", sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    line-height: 40px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact .socials {
+    padding-top: 30px;
+    font-size: 0;
+}
+
+.contact .social {
+    padding: 10px 0;
+    color: white;
+    font-family: "saira condensed", sans-serif;
+}
+
+.contact .socials img {
+    float: left;
+}
+
+.contact .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact h2 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+    .contact form .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 20px;
+    }
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .contact input {
+        height: 46px;
+    }
+    .contact textarea {
+        height: 180px;
+    }
+    .contact button {
+        line-height: 50px;
+        font-size: 20px;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .contact button:hover {
+        background-color: white;
+        color: black;
+    }
+    .contact input, .contact button, .contact textarea {
+        margin-bottom: 35px;
+    }
+}
+
+footer {
+    background-color: #29a6dc;
+    color: white;
+    font-family: "saira", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
